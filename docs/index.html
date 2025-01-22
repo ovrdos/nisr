@@ -5,6 +5,9 @@
     body {
       font-family: Raleway, Arial;
       padding-bottom: 200px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
     img.logo {
       width: 233px;
@@ -31,6 +34,65 @@
     pre {
       width: 100px;
     }
+    .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .service {
+            box-sizing: border-box;
+            padding: 30px;
+            width: 30%;
+            margin: 1%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .service h3 {
+            margin: 20px 0 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .service p {
+            font-size: 1em;
+            color: #666;
+            text-align: center;
+        }
+
+        .service:nth-child(1), 
+        .service:nth-child(2) {
+            align-self: flex-start;
+        }
+
+        .service:nth-child(3) {
+            align-self: center;
+        }
+
+        .service:nth-child(4), 
+        .service:nth-child(5) {
+            align-self: flex-end;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
   </style>
 </head>
 <body>
@@ -52,39 +114,41 @@
   </div>
 
   <br/>
-  <h2 class="Our Services">Our Services</h2>
-
+  <h2 class="title_bar">Our Services</h2>
+  
+  <div class="container">
   <h3 class="title_bar">Land Management Services</h3>
   <div class="info_bar">
     <p>We provide sustainable land management solutions that optimize land use for economic and environmental benefits, including soil health, water management, and climate-resilient practices.</p>
   </div>
-
-  <h3 class="title_bar">Co-Working Collaboration Locations</h3>
-  <div class="info_bar">
+  
+  <div class="service info_bar">
+    <img class="service_thumbnail" src="https://images.squarespace-cdn.com/content/v1/67666e500a0e7e627805a990/1734886876844-SPAI7SE99A953JC3G8QC/unsplash-image-CpsTAUPoScw.jpg">
+    <h3 class="title_bar">Co-Working Collaboration Locations</h3>
     <p>We offer flexible, collaborative office spaces for professionals, startups, and businesses, with high-speed internet, networking opportunities, and modern amenities.</p>
   </div>
-
-  <h3 class="title_bar">Global Import-Export Services</h3>
-  <div class="info_bar">
+  <div class="service info_bar">
     <img class="service_thumbnail" src="https://images.squarespace-cdn.com/content/v1/67666e500a0e7e627805a990/1734886876844-SPAI7SE99A953JC3G8QC/unsplash-image-CpsTAUPoScw.jpg">
+    <h3 class="title_bar">Global Import-Export Services</h3>
     <p>Our import/export services streamline the movement of goods across borders, ensuring compliance with international trade laws, efficient logistics, and cost-effective solutions.</p>
   </div>
-
-  <h3 class="title_bar">Cleaning & Maintenance Services</h3>
-  <div class="info_bar">
+  <div class="service info_bar">
+    <img class="service_thumbnail" src="https://images.squarespace-cdn.com/content/v1/67666e500a0e7e627805a990/1734886876844-SPAI7SE99A953JC3G8QC/unsplash-image-CpsTAUPoScw.jpg">
+    <h3 class="title_bar">Cleaning & Maintenance Services</h3>
     <p>We offer expert cleaning services for commercial, industrial, government, tourism, and residential organizations, utilizing eco-friendly products and offering flexible scheduling to meet diverse needs.</p>
   </div>
-
-  <h3 class="title_bar">Plastic Cleanup and Collection Project</h3>
-  <div class="info_bar">
+  <div class="service info_bar">
+    <img class="service_thumbnail" src="https://images.squarespace-cdn.com/content/v1/67666e500a0e7e627805a990/1734886876844-SPAI7SE99A953JC3G8QC/unsplash-image-CpsTAUPoScw.jpg">
+    <h3 class="title_bar">Plastic Cleanup and Collection Project</h3>
     <p>Our plastic cleanup service reduces landfill waste and promotes recycling through efficient collection, sorting, and partnership with local communities.</p>
   </div>
-
+  </div>
+  
   <br/>
-  <h2 class="Our Projects">Our Projects</h2>
+  <h2 class="title_bar">Our Projects</h2>
 
   <h3 class="title_bar">Plastic Cleanup Project</h3>
-  <div class="info_bar">
+  <div class="project info_bar">
     <p>We are committed to reducing plastic waste through community-based cleanup efforts, focusing on recycling and sustainable waste management practices.</p>
   </div>
 
@@ -99,7 +163,7 @@
   </div>
 
   <br/>
-  <h2 class="Our Commitment">Our Commitment</h2>
+  <h2 class="title_bar">Our Commitment</h2>
 
   <div class="info_bar">
     <p>NISR’s cleaning and maintenance services address the critical needs of sanitation and hygiene for government, industrial, commercial, and residential sectors. By employing skilled professionals, we ensure high standards of service.</p>
